@@ -1,0 +1,9 @@
+function maximumInArray(N,arr){
+    
+    let Max = -Infinity;
+    for(let p=0; p<arr.length; p++){
+        if(arr[p]>Max){
+            Max=arr[p];
+        }
+    }console.log(Max);
+}

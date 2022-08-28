@@ -1,0 +1,6 @@
+function printHorizontalArray(N,arr){
+    var bag="";
+    for(let p=0; p<arr.length; p++){
+        bag+=arr[p]+" ";
+    }console.log(bag);
+}

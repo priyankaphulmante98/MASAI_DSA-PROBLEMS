@@ -1,0 +1,7 @@
+function ArraySum(n, arr){
+   let sum=0; 
+   for(let p=0; p<arr.length; p++){
+       sum=sum+arr[p];
+   }
+  console.log(sum)
+} 

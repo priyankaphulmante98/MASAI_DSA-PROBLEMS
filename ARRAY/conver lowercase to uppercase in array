@@ -1,0 +1,11 @@
+//Problem 2 : Given a character in lower case print the upper case character
+
+ var char  = "p";
+ var lower = ["a", "p", "r"];
+ var upper = ["A","P","R"];
+for(let i=0; i<lower.length; i++){
+  if(char==lower[i]){
+     console.log(upper[i])
+    break;
+  }
+}

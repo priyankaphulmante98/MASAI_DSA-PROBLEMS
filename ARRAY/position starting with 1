@@ -1,0 +1,8 @@
+//Problem 1 : Given an array print the position (starting with 1) and the element in a single line.
+
+var names =["priya", "piyu", "raju", "praveen"];
+var ages  =[23, 22, 24, 23];
+
+for(let p=0; p<names.length; p++){
+  console.log(p+1, names[p], ages[p]);
+}

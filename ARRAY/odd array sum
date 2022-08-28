@@ -1,0 +1,8 @@
+function oddArraySum(n, arr){
+    let sum=0;
+    for(let p=0; p<arr.length; p++){
+        if(arr[p]%2==1){
+            sum=sum+arr[p];
+        }
+    }console.log(sum);
+}

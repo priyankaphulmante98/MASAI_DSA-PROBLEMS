@@ -1,0 +1,7 @@
+function oddArray(n, arr){
+ for(var p=0; p<arr.length; p++){
+     if(arr[p]%2!==0){
+         console.log(arr[p]);
+     }
+ }
+}

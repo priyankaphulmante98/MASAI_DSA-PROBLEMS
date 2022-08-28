@@ -1,0 +1,6 @@
+function reverseArrayTraversal(n, arr){
+    let bag="";
+    for(let p=n-1; p>=0; p--){
+        bag+=arr[p]+" ";
+    }console.log(bag);
+}

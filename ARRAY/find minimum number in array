@@ -1,0 +1,10 @@
+function minimumInArray(N,arr){
+    let pad=Infinity;
+    for(let p=0; p<N; p++){
+        if(arr[p]<pad){
+            pad=arr[p];
+        }
+    }console.log(pad);
+  
+  
+}
