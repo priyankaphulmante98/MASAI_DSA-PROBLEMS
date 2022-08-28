@@ -1,0 +1,8 @@
+function traverse2dArray(N, M, matrix){
+ var bag="";
+ for(let col=M-1; col>=0; col--){
+     for(let row=0; row<N; row++){
+         bag+=matrix[row][col]+" ";
+     }
+ }console.log(bag);
+}
