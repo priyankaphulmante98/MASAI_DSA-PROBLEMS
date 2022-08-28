@@ -1,0 +1,31 @@
+//Given a square matrix print both the diagonals
+var items = [];
+
+
+items.push([1,2,3,]);
+items.push([4,5,6,]);
+items.push([7,8,9,]);
+
+var rows = items.length;
+var cols = items[0].length;
+
+var left = [];
+var right =[];
+for(var i=0; i<rows; i++)
+  {
+  
+    for(var j = 0; j<cols; j++)
+      {
+        
+        if(i==j)
+        {
+       left.push(items[i][j]);
+        }
+        if(i+j == rows-1)
+        {
+          right.push(items[i][j]);
+        }
+      }
+  }
+console.log(left);
+console.log(right);
