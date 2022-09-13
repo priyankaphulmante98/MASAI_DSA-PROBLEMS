@@ -1,4 +1,4 @@
- //Given a matrix print it in the form of a snake
+ //Given a matrix print it in the form of a snake //1,2,3,6,5,4,7,8,9
 var arr = [];
 
 arr.push([1,2,3]);
