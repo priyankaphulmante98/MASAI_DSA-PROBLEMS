@@ -33,10 +33,89 @@
  
   // something(4);
 
-  const str = "hello world !!!";
+  // const str = "hello world !!!";
 
-  let reversedArr = [...str].reverse().join("");
+  // let reversedArr = [...str].reverse().join("");
 
-  console.log(reversedArr)
+  // console.log(reversedArr)
    
+ //# this keyword ===>
+
+// var obj = {
+//   name : "priya",
+//   getName: function(){
+//   console.log(this.name);
+//   }
+// }
+
+//   var getName = obj.getName;
+       
+//        var obj2 = {name:"riya", getName };
+//        obj2.getName();
+
+
+// //# Call
+// function sayHello(){
+//   return "Hello" + this.name;
+// }
+// var obj = {
+//   name:"priya"
+// };
+
+// sayHello.call(obj);   //Hello priya
+
+// var person = {
+//   age: 25,
+//   getAge : function(){
+//     return this.age;
+//   }
+// }
+
+// var person2 = {
+//   age:23 
+// };
+// person.getAge.call(person2); //54
+
+
+// function saySomething(message){
+//   return this.name + "is" + message;
+// }
+
+// var person4 = {
+//   name: "priya"
+
+// };
+// saySomething.call(person4, "awesome");
+// // priya is awesome
+  
+
+//Apply
+function saysomething(message){
+  return this.name + "is" + message;
+}
+
+var person4 = {
+  name:"priya"
+};
+
+saysomething.apply(person4, ["awesome"]);
+
+
+
+//Blind()=====>
+
+var bikeDetails = {
+  displayDetails: function(registrationNumber, brandName){
+    return this.name+ "," +"bikeDetails:" + registrationNumber + "," + brandName;
+  }
+}
+
+var person1 = {
+  name: "priya"
+}
+
+var detailsPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");
+
+
+
 </script>
