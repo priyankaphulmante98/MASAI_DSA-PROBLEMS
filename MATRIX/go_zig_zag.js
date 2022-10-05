@@ -16,3 +16,6 @@ function goInZigZag(N, M, matrix){
       
      }
    
+
+     
+     

@@ -1,8 +1,21 @@
+// function traverse2dArray(N, M, matrix){
+//  var bag="";
+//  for(let col=M-1; col>=0; col--){
+//      for(let row=0; row<N; row++){
+//          bag+=matrix[row][col]+" ";
+//      }
+//  }console.log(bag);
+// }
+
 function traverse2dArray(N, M, matrix){
- var bag="";
- for(let col=M-1; col>=0; col--){
-     for(let row=0; row<N; row++){
-         bag+=matrix[row][col]+" ";
-     }
- }console.log(bag);
-}
+    let bag="";
+    for(let row=M-1; row>=0; row--){
+       
+        for(let col=0; col<N; col++){
+            bag=bag+matrix[col][row]+" ";
+        }
+    }console.log(bag);
+    
+   }
+   
+    
